@@ -7,6 +7,11 @@ function isPrime(input){
 	}
 	return true
 }
-let value = 31
-console.log(isPrime(value))
-	
+let check=2;
+for(j=0;j!=10001;j++){
+	if(isPrime(check)==false){
+		j=j-1
+	}
+	check++
+}
+console.log(check-1)
